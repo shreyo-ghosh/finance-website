@@ -1,5 +1,4 @@
 /* LaunchLayer Finance Website - Modern Finance Color Palette: Navy, White, Gold */
-
 /* CSS Reset and Base Styles */
 * {
   margin: 0;
@@ -49,6 +48,16 @@ header {
 
 header h1 {
   color: var(--white);
+}
+
+/* Logo Styles */
+.logo-img {
+  height: 60px;
+  width: auto;
+  margin-right: 1rem;
+  vertical-align: middle;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Navigation */
@@ -102,6 +111,107 @@ nav a:hover {
   border-left: 4px solid var(--gold-primary);
 }
 
+/* Insurance Cards Grid */
+.insurance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.insurance-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.insurance-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: var(--gold-primary);
+}
+
+.card-icon {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.card-icon i {
+  font-size: 3rem;
+  color: var(--gold-primary);
+  background: var(--light-gray);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.insurance-card h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--navy-primary);
+}
+
+.card-description {
+  text-align: center;
+  color: var(--text-gray);
+  margin-bottom: 1.5rem;
+}
+
+.benefits-list {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.benefits-list li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--text-dark);
+}
+
+.benefits-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--gold-primary);
+  font-weight: bold;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.feature-item i {
+  font-size: 2.5rem;
+  color: var(--gold-primary);
+  margin-bottom: 1rem;
+}
+
+.feature-item h4 {
+  margin-bottom: 1rem;
+  color: var(--navy-primary);
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -115,6 +225,8 @@ nav a:hover {
   font-weight: 600;
   transition: all 0.3s ease;
   margin: 0.5rem 0.5rem 0.5rem 0;
+  width: 100%;
+  text-align: center;
 }
 
 .btn:hover {
@@ -189,6 +301,15 @@ footer {
     margin: 1rem;
   }
   
+  .insurance-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
   nav ul {
     flex-direction: column;
     align-items: center;
@@ -201,6 +322,11 @@ footer {
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
   
+  .logo-img {
+    height: 50px;
+    margin-right: 0.5rem;
+  }
+  
   .footer-content {
     padding: 0 1rem;
   }
@@ -212,6 +338,16 @@ footer {
     padding: 1rem;
   }
   
+  .insurance-card {
+    padding: 1.5rem;
+  }
+  
+  .card-icon i {
+    font-size: 2.5rem;
+    width: 70px;
+    height: 70px;
+  }
+  
   h1 { font-size: 1.75rem; }
   h2 { font-size: 1.25rem; }
   
@@ -220,6 +356,10 @@ footer {
     width: 100%;
     text-align: center;
     margin: 0.5rem 0;
+  }
+  
+  .logo-img {
+    height: 40px;
   }
 }
 
