@@ -7,9 +7,15 @@
     <meta name="keywords" content="finance, insurance, wealth management, investment planning, financial advisor, retirement planning">
     <meta name="author" content="LaunchLayer Finance">
     <title>LaunchLayer Finance - Comprehensive Financial Solutions</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        /* Section and Spacing Normalization */
+        section, .section {
+            margin: 40px 0;
+            padding: 40px 20px;
+        }
+        
         /* Service Images Styling */
         .service-img {
             width: 100%;
@@ -26,7 +32,12 @@
             margin-right: 0.5rem;
         }
         
-        /* Footer Dark Navy Styling */
+        /* Service Card Margin Updates */
+        .service-card, .card {
+            margin: 20px 0;
+        }
+        
+        /* Footer Dark Navy Styling for Better Contrast */
         footer {
             background-color: #1a237e !important;
             color: white !important;
@@ -42,6 +53,49 @@
             color: #e3f2fd !important;
         }
         
+        /* Button Updates */
+        .btn {
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background-color: #1976d2;
+            color: white;
+            border: 2px solid #1976d2;
+        }
+        
+        .btn-primary:hover {
+            background-color: #1565c0;
+            border-color: #1565c0;
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: #1976d2;
+            border: 2px solid #1976d2;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #1976d2;
+            color: white;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: #333;
+            border: 2px solid #ddd;
+        }
+        
+        .btn-outline:hover {
+            background-color: #1976d2;
+            color: white;
+            border-color: #1976d2;
+        }
+        
         /* Responsive Layout */
         @media (max-width: 768px) {
             .service-img {
@@ -50,6 +104,10 @@
             
             .logo-img {
                 height: 32px;
+            }
+            
+            section, .section {
+                padding: 30px 15px;
             }
         }
     </style>
@@ -60,24 +118,24 @@
         <div class="container">
             <nav class="navbar">
                 <div class="nav-brand">
-                    <a href="index.html" class="logo">
+                    <a class="logo" href="index.html">
                         <img src="assets/Launch-Layer-logo.jpg" alt="LaunchLayer Finance Logo" class="logo-img">
                         <span class="logo-text">LaunchLayer Finance</span>
                     </a>
                 </div>
                 
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="insurance.html" class="nav-link">Insurance</a></li>
-                    <li class="nav-item"><a href="wealth.html" class="nav-link">Wealth</a></li>
-                    <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="insurance.html">Insurance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wealth.html">Wealth</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
                 
                 <div class="nav-cta">
-                    <a href="contact.html" class="btn btn-primary cta-btn">Get a Quote</a>
+                    <a class="btn btn-primary cta-btn" href="contact.html">Get a Quote</a>
                 </div>
                 
                 <div class="hamburger">
@@ -98,12 +156,12 @@
                     <h1>Your Financial Future Starts Here</h1>
                     <p>Comprehensive financial solutions tailored to secure your future and achieve your dreams.</p>
                     <div class="hero-buttons">
-                        <a href="contact.html" class="btn btn-primary">Get Started</a>
-                        <a href="about.html" class="btn btn-secondary">Learn More</a>
+                        <a class="btn btn-primary" href="contact.html">Get Started</a>
+                        <a class="btn btn-secondary" href="about.html">Learn More</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="assets/hero-image.jpg" alt="Financial planning consultation" class="hero-img">
+                    <img src="assets/hero-financial-planning.jpg" alt="Financial planning consultation" class="hero-img">
                 </div>
             </div>
         </section>
@@ -129,7 +187,7 @@
                             <li>Asset Allocation</li>
                             <li>Risk Assessment</li>
                         </ul>
-                        <a href="wealth.html" class="btn btn-outline">Learn More</a>
+                        <a class="btn btn-outline" href="wealth.html">Learn More</a>
                     </div>
                     
                     <div class="service-card">
@@ -144,7 +202,7 @@
                             <li>Value Investing</li>
                             <li>Income Generation</li>
                         </ul>
-                        <a href="wealth.html" class="btn btn-outline">Learn More</a>
+                        <a class="btn btn-outline" href="wealth.html">Learn More</a>
                     </div>
                     
                     <div class="service-card">
@@ -159,7 +217,7 @@
                             <li>Performance Tracking</li>
                             <li>Rebalancing</li>
                         </ul>
-                        <a href="wealth.html" class="btn btn-outline">Learn More</a>
+                        <a class="btn btn-outline" href="wealth.html">Learn More</a>
                     </div>
                     
                     <div class="service-card">
@@ -174,7 +232,7 @@
                             <li>Health Insurance</li>
                             <li>Property Protection</li>
                         </ul>
-                        <a href="insurance.html" class="btn btn-outline">Learn More</a>
+                        <a class="btn btn-outline" href="insurance.html">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -201,10 +259,10 @@
                                 <p>Years Experience</p>
                             </div>
                         </div>
-                        <a href="about.html" class="btn btn-primary">About Our Team</a>
+                        <a class="btn btn-primary" href="about.html">About Our Team</a>
                     </div>
                     <div class="about-image">
-                        <img src="assets/team-consultation.jpg" alt="Financial consultation" class="about-img">
+                        <img src="assets/financial-consultation.jpg" alt="Financial consultation" class="about-img">
                     </div>
                 </div>
             </div>
@@ -216,7 +274,7 @@
                 <div class="cta-content">
                     <h2>Ready to Secure Your Financial Future?</h2>
                     <p>Get personalized financial advice from our expert team. Schedule your consultation today.</p>
-                    <a href="contact.html#quote" class="btn btn-primary btn-large">Schedule Consultation</a>
+                    <a class="btn btn-primary btn-large" href="contact.html#quote">Schedule Consultation</a>
                 </div>
             </div>
         </section>
