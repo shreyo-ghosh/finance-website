@@ -1,0 +1,36 @@
+{
+  "name": "launchlayer-finance-website",
+  "version": "1.0.0",
+  "description": "LaunchLayer Finance Website - Static website for finance education and social media business",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx live-server --port=3000 --open=/index.html",
+    "build": "echo 'Building static website...' && mkdir -p dist && cp -r *.html *.css *.js dist/ 2>/dev/null || true",
+    "serve": "npx http-server . -p 8080",
+    "test": "echo 'No tests specified yet'"
+  },
+  "keywords": [
+    "finance",
+    "education",
+    "social-media",
+    "business",
+    "static-website",
+    "launchlayer"
+  ],
+  "author": "LaunchLayer Finance",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shreyo-ghosh/finance-website.git"
+  },
+  "homepage": "https://shreyo-ghosh.github.io/finance-website",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
