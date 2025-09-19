@@ -3,267 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LaunchLayer Finance | Professional Insurance & Wealth Management</title>
-    <meta name="description" content="Professional insurance and wealth management services. Get quotes, build wealth, and secure your financial future with LaunchLayer Finance.">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="LaunchLayer Finance - Your trusted partner for comprehensive financial solutions including insurance, wealth management, and investment planning.">
+    <meta name="keywords" content="finance, insurance, wealth management, investment planning, financial advisor, retirement planning">
+    <meta name="author" content="LaunchLayer Finance">
+    <title>LaunchLayer Finance - Comprehensive Financial Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Service Images Styling */
+        .service-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        
+        /* Logo Image Styling */
+        .logo-img {
+            height: 40px;
+            width: auto;
+            margin-right: 0.5rem;
+        }
+        
+        /* Footer Dark Navy Styling */
+        footer {
+            background-color: #1a237e !important;
+            color: white !important;
+        }
+        
+        footer h3,
+        footer p,
+        footer a {
+            color: white !important;
+        }
+        
+        footer a:hover {
+            color: #e3f2fd !important;
+        }
+        
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .service-img {
+                height: 150px;
+            }
+            
+            .logo-img {
+                height: 32px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">LaunchLayer Finance</a>
-            </div>
-            <div class="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="insurance.html" class="nav-link">Insurance</a>
-                <a href="wealth.html" class="nav-link">Wealth Management</a>
-                <a href="testimonials.html" class="nav-link">Testimonials</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-                <a href="contact.html" class="nav-link cta-btn">Get a Quote</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Secure Your Financial Future</h1>
-            <p class="hero-subtitle">Professional insurance coverage and wealth building strategies tailored for your success</p>
-            <div class="hero-buttons">
-                <a href="contact.html" class="btn btn-primary">Get a Quote</a>
-                <a href="wealth.html" class="btn btn-secondary">Start Investing</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <i class="fas fa-shield-alt hero-icon"></i>
-        </div>
-    </section>
-
-    <!-- Services Grid -->
-    <section class="services">
+    <!-- Sticky Header -->
+    <header class="header sticky-header">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-heart service-icon"></i>
-                    <h3>Life Insurance</h3>
-                    <p>Comprehensive life insurance policies to protect your loved ones' future</p>
-                    <a href="insurance.html" class="btn btn-outline">Learn More</a>
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <a href="index.html" class="logo">
+                        <img src="assets/Launch-Layer-logo.jpg" alt="LaunchLayer Finance Logo" class="logo-img">
+                        <span class="logo-text">LaunchLayer Finance</span>
+                    </a>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-user-md service-icon"></i>
-                    <h3>Health Insurance</h3>
-                    <p>Quality healthcare coverage for you and your family's medical needs</p>
-                    <a href="insurance.html" class="btn btn-outline">Learn More</a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="insurance.html" class="nav-link">Insurance</a></li>
+                    <li class="nav-item"><a href="wealth.html" class="nav-link">Wealth</a></li>
+                    <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <a href="contact.html" class="btn btn-primary cta-btn">Get a Quote</a>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-car service-icon"></i>
-                    <h3>Auto Insurance</h3>
-                    <p>Complete vehicle protection with competitive rates and excellent service</p>
-                    <a href="insurance.html" class="btn btn-outline">Learn More</a>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-chart-line service-icon"></i>
-                    <h3>Investment Management</h3>
-                    <p>Strategic investment planning to grow your wealth over time</p>
-                    <a href="wealth.html" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-piggy-bank service-icon"></i>
-                    <h3>Retirement Planning</h3>
-                    <p>Secure your retirement with our comprehensive planning services</p>
-                    <a href="wealth.html" class="btn btn-outline">Learn More</a>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-graduation-cap service-icon"></i>
-                    <h3>Education Savings</h3>
-                    <p>Plan for your children's education with our specialized savings programs</p>
-                    <a href="wealth.html" class="btn btn-outline">Learn More</a>
-                </div>
-            </div>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <!-- Why Choose Us -->
-    <section class="why-choose-us">
-        <div class="container">
-            <h2 class="section-title">Why Choose LaunchLayer Finance?</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <i class="fas fa-award feature-icon"></i>
-                    <h3>15+ Years Experience</h3>
-                    <p>Trusted expertise in financial planning and insurance services</p>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-users feature-icon"></i>
-                    <h3>10,000+ Happy Clients</h3>
-                    <p>Serving families and businesses with personalized solutions</p>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-phone feature-icon"></i>
-                    <h3>24/7 Support</h3>
-                    <p>Always here when you need us most with dedicated customer service</p>
-                </div>
-                <div class="feature">
-                    <i class="fas fa-certificate feature-icon"></i>
-                    <h3>Licensed Professionals</h3>
-                    <p>Certified advisors committed to your financial success</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Preview -->
-    <section class="testimonials-preview">
-        <div class="container">
-            <h2 class="section-title">What Our Clients Say</h2>
-            <div class="testimonials-carousel">
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"LaunchLayer Finance helped us secure our family's future with comprehensive insurance and investment planning. Their expertise is unmatched."</p>
-                        <div class="testimonial-author">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Client photo" class="author-photo">
-                            <div class="author-info">
-                                <h4>Michael Johnson</h4>
-                                <span>Business Owner</span>
-                            </div>
-                        </div>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Your Financial Future Starts Here</h1>
+                    <p>Comprehensive financial solutions tailored to secure your future and achieve your dreams.</p>
+                    <div class="hero-buttons">
+                        <a href="contact.html" class="btn btn-primary">Get Started</a>
+                        <a href="about.html" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"Professional, knowledgeable, and always available when we need them. Our retirement planning is now in excellent hands."</p>
-                        <div class="testimonial-author">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b647?w=60&h=60&fit=crop&crop=face" alt="Client photo" class="author-photo">
-                            <div class="author-info">
-                                <h4>Sarah Davis</h4>
-                                <span>Healthcare Professional</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="hero-image">
+                    <img src="assets/hero-image.jpg" alt="Financial planning consultation" class="hero-img">
                 </div>
-                <div class="testimonial">
-                    <div class="testimonial-content">
-                        <p>"Their investment strategies have consistently outperformed our expectations. We're grateful for their guidance and expertise."</p>
-                        <div class="testimonial-author">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Client photo" class="author-photo">
-                            <div class="author-info">
-                                <h4>David Wilson</h4>
-                                <span>Engineer</span>
-                            </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Core Services</h2>
+                    <p>Comprehensive financial solutions designed to meet your unique needs</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="assets/wealth-building.jpg" alt="Wealth Building Services" class="service-img">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
                         </div>
+                        <h3>Wealth Building Services</h3>
+                        <p>Strategic wealth accumulation through diversified investment portfolios and long-term planning.</p>
+                        <ul class="service-features">
+                            <li>Portfolio Management</li>
+                            <li>Asset Allocation</li>
+                            <li>Risk Assessment</li>
+                        </ul>
+                        <a href="wealth.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <img src="assets/investment-strategies.jpg" alt="Investment Strategies" class="service-img">
+                        <div class="service-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Investment Strategies</h3>
+                        <p>Customized investment approaches tailored to your financial goals and risk tolerance.</p>
+                        <ul class="service-features">
+                            <li>Growth Investing</li>
+                            <li>Value Investing</li>
+                            <li>Income Generation</li>
+                        </ul>
+                        <a href="wealth.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <img src="assets/portfolio-management.jpg" alt="Portfolio Management" class="service-img">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Portfolio Management</h3>
+                        <p>Professional portfolio oversight with continuous monitoring and strategic adjustments.</p>
+                        <ul class="service-features">
+                            <li>Active Management</li>
+                            <li>Performance Tracking</li>
+                            <li>Rebalancing</li>
+                        </ul>
+                        <a href="wealth.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <img src="assets/insurance-protection.jpg" alt="Insurance Protection" class="service-img">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Insurance Protection</h3>
+                        <p>Comprehensive insurance solutions to protect your family and assets from unforeseen circumstances.</p>
+                        <ul class="service-features">
+                            <li>Life Insurance</li>
+                            <li>Health Insurance</li>
+                            <li>Property Protection</li>
+                        </ul>
+                        <a href="insurance.html" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
             </div>
-            <div class="text-center">
-                <a href="testimonials.html" class="btn btn-primary">Read All Testimonials</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Bottom CTA Banner -->
-    <section class="cta-banner">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Secure Your Financial Future?</h2>
-                <p>Get started today with a free consultation from our expert financial advisors</p>
-                <a href="contact.html" class="btn btn-white">Get Free Consultation</a>
+        <!-- About Preview Section -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Why Choose LaunchLayer Finance?</h2>
+                        <p>With over a decade of experience in financial services, we've helped thousands of clients achieve their financial goals through personalized strategies and expert guidance.</p>
+                        <div class="stats">
+                            <div class="stat-item">
+                                <h3>1000+</h3>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>$50M+</h3>
+                                <p>Assets Managed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3>15+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                        <a href="about.html" class="btn btn-primary">About Our Team</a>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/team-consultation.jpg" alt="Financial consultation" class="about-img">
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Secure Your Financial Future?</h2>
+                    <p>Get personalized financial advice from our expert team. Schedule your consultation today.</p>
+                    <a href="contact.html#quote" class="btn btn-primary btn-large">Schedule Consultation</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>LaunchLayer Finance</h3>
-                <p>Your trusted partner for insurance and wealth management solutions. Building secure financial futures since 2008.</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="insurance.html">Insurance Services</a></li>
-                    <li><a href="wealth.html">Wealth Management</a></li>
-                    <li><a href="testimonials.html">Client Testimonials</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="insurance.html">Life Insurance</a></li>
-                    <li><a href="insurance.html">Health Insurance</a></li>
-                    <li><a href="insurance.html">Auto Insurance</a></li>
-                    <li><a href="wealth.html">Investment Management</a></li>
-                    <li><a href="wealth.html">Retirement Planning</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Newsletter</h3>
-                <p>Stay updated with the latest financial tips and news</p>
-                <div class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" class="newsletter-input">
-                    <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="footer-bottom-content">
-                    <p>&copy; 2025 LaunchLayer Finance. All rights reserved.</p>
-                    <div class="footer-links">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Cookie Policy</a>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LaunchLayer Finance</h3>
+                    <p>Your trusted partner for comprehensive financial solutions including insurance, wealth management, and investment planning.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="insurance.html">Insurance</a></li>
+                        <li><a href="wealth.html">Wealth</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="wealth.html">Wealth Management</a></li>
+                        <li><a href="insurance.html">Insurance Planning</a></li>
+                        <li><a href="wealth.html">Investment Advisory</a></li>
+                        <li><a href="contact.html">Financial Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@launchlayerfinance.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Financial District, NY 10001</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 LaunchLayer Finance. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Mobile navigation toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-
-        // Testimonials carousel
-        let currentTestimonial = 0;
-        const testimonials = document.querySelectorAll('.testimonial');
-        const totalTestimonials = testimonials.length;
-
-        function showTestimonial(index) {
-            testimonials.forEach((testimonial, i) => {
-                testimonial.style.display = i === index ? 'block' : 'none';
-            });
-        }
-
-        function nextTestimonial() {
-            currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
-            showTestimonial(currentTestimonial);
-        }
-
-        // Initialize testimonials
-        showTestimonial(0);
-        setInterval(nextTestimonial, 5000);
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -6,9 +6,16 @@
   "scripts": {
     "start": "npx http-server . -p 3000 -o",
     "dev": "npx live-server --port=3000 --open=/index.html",
-    "build": "echo 'Building static website...' && mkdir -p dist && cp -r *.html *.css *.js dist/ 2>/dev/null || true",
+    "build": "echo 'Building static website...' && mkdir -p dist && cp -r *.html css/ dist/ 2>/dev/null || true",
     "serve": "npx http-server . -p 8080",
-    "test": "echo 'No tests specified yet'"
+    "test": "echo 'No tests specified yet'",
+    "lint": "npm run lint:html && npm run lint:css",
+    "lint:html": "htmlhint *.html",
+    "lint:css": "stylelint 'css/*.css'",
+    "format": "npm run format:html && npm run format:css",
+    "format:html": "prettier --write '*.html'",
+    "format:css": "prettier --write 'css/*.css'",
+    "lint:fix": "npm run format && npm run lint"
   },
   "keywords": [
     "finance",
@@ -27,7 +34,11 @@
   "homepage": "https://shreyo-ghosh.github.io/finance-website",
   "devDependencies": {
     "http-server": "^14.1.1",
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard": "^34.0.0",
+    "prettier": "^3.0.0"
   },
   "engines": {
     "node": ">=14.0.0",

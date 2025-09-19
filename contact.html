@@ -1,126 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact LaunchLayer Finance for personalized financial advice, wealth management, and insurance services. Get in touch with our expert team today.">
     <title>Contact - LaunchLayer Finance</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .office-details {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+        }
+        .office-details h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+        .office-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .office-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .office-card .icon {
+            font-size: 3rem;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+        .office-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        .form-control {
+            margin-bottom: 1.5rem;
+        }
+        .form-control label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        .form-control input:focus,
+        .form-control select:focus,
+        .form-control textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        .success-message {
+            display: none;
+            background-color: #10b981;
+            color: white;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .office-cards {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            .office-details {
+                padding: 2rem 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-brand">
-                <h2>LaunchLayer Finance</h2>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="wealth.html">Wealth Building</a></li>
-                <li><a href="insurance.html">Insurance</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Header -->
+    <header class="header sticky-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <a class="logo" href="index.html">
+                        <img alt="LaunchLayer Finance Logo" class="logo-img" src="assets/images/logo.png">
+                        <span class="logo-text">LaunchLayer Finance</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="insurance.html">Insurance</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wealth.html">Wealth</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <a class="btn btn-primary cta-btn" href="contact.html">Get a Quote</a>
+                </div>
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-content">
-                <h1>Get in Touch with Our Financial Experts</h1>
-                <p>Ready to take control of your financial future? Schedule a consultation with our experienced team today.</p>
-                <a href="#contact-form" class="cta-button"><strong>Schedule Consultation</strong></a>
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Get in Touch with Our Financial Experts</h1>
+                    <p>Ready to take control of your financial future? Schedule a consultation with our experienced team today.</p>
+                    <a class="btn btn-primary" href="#contact-form">Schedule Consultation</a>
+                </div>
             </div>
         </section>
 
-        <!-- Contact Information Section -->
-        <section class="contact-info">
+        <!-- Office Details Section -->
+        <section class="office-details">
             <div class="container">
-                <h2>Contact Information</h2>
-                <div class="contact-grid">
-                    <!-- Contact details cards will be added here -->
+                <h2>Our Office Locations</h2>
+                <div class="office-cards">
+                    <div class="office-card">
+                        <div class="icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Main Office</h3>
+                        <p><strong>Address:</strong><br>
+                        123 Financial Plaza, Suite 500<br>
+                        New York, NY 10001</p>
+                        <p><strong>Phone:</strong> (555) 123-4567<br>
+                        <strong>Email:</strong> info@launchlayerfinance.com</p>
+                    </div>
+                    
+                    <div class="office-card">
+                        <div class="icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Business Hours</h3>
+                        <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br>
+                        <strong>Saturday:</strong> 10:00 AM - 4:00 PM<br>
+                        <strong>Sunday:</strong> Closed</p>
+                        <p><em>Extended hours available by appointment</em></p>
+                    </div>
+                    
+                    <div class="office-card">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Directions & Parking</h3>
+                        <p><strong>Parking:</strong> Available in building garage<br>
+                        <strong>Public Transport:</strong> Near Penn Station<br>
+                        <strong>Accessibility:</strong> Wheelchair accessible</p>
+                        <p><em>Visitor parking validated for consultations</em></p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Form Section -->
-        <section id="contact-form" class="contact-form">
+        <section class="contact-form" id="contact-form">
             <div class="container">
-                <h2>Send Us a Message</h2>
+                <div class="section-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+                </div>
+                
                 <div class="form-container">
-                    <!-- Contact form will be added here -->
+                    <div id="success-message" class="success-message">
+                        Thank you for your message! We'll get back to you within 24 hours.
+                    </div>
+                    
+                    <form id="contact-form-element" action="#" method="post">
+                        <div class="form-control">
+                            <label for="fullname">Full Name *</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                        </div>
+
+                        <div class="form-control">
+                            <label for="inquiry-type">Inquiry Type *</label>
+                            <select id="inquiry-type" name="inquiry-type" required>
+                                <option value="">Please select your inquiry type...</option>
+                                <option value="wealth-management">Wealth Management</option>
+                                <option value="investment-planning">Investment Planning</option>
+                                <option value="retirement-planning">Retirement Planning</option>
+                                <option value="life-insurance">Life Insurance</option>
+                                <option value="health-insurance">Health Insurance</option>
+                                <option value="property-insurance">Property Insurance</option>
+                                <option value="portfolio-review">Portfolio Review</option>
+                                <option value="financial-consultation">General Financial Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Please describe your financial goals and how we can help you achieve them..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
 
-        <!-- Office Hours Section -->
-        <section class="office-hours">
+        <!-- Quote Section -->
+        <section class="cta-section" id="quote">
             <div class="container">
-                <h2>Office Hours</h2>
-                <div class="hours-content">
-                    <!-- Office hours information will be added here -->
+                <div class="cta-content">
+                    <h2>Get a Free Quote</h2>
+                    <p>Ready to get started? Request a personalized quote for our financial services.</p>
+                    <a class="btn btn-primary btn-large" href="#contact-form">Request Quote</a>
                 </div>
-            </div>
-        </section>
-
-        <!-- Location Section -->
-        <section class="location">
-            <div class="container">
-                <h2>Our Location</h2>
-                <div class="location-content">
-                    <!-- Map and location details will be added here -->
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq">
-            <div class="container">
-                <h2>Frequently Asked Questions</h2>
-                <div class="faq-content">
-                    <!-- FAQ items will be added here -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Final CTA Section -->
-        <section class="contact-cta">
-            <div class="container">
-                <h2>Ready to Start Your Financial Journey?</h2>
-                <p>Don't wait to secure your financial future. Contact us today for a personalized consultation.</p>
-                <a href="#contact-form" class="cta-button"><strong>Contact Us Now</strong></a>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>LaunchLayer Finance</h3>
-                    <p>Your trusted partner in financial success.</p>
+                    <p>Your trusted partner for comprehensive financial solutions including insurance, wealth management, and investment planning.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/launchlayer_finance/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
+                
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h3>Quick Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <li><a href="wealth.html">Wealth Building</a></li>
                         <li><a href="insurance.html">Insurance</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="wealth.html">Wealth</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p>Email: info@launchlayerfinance.com</p>
-                    <p>Phone: (555) 123-4567</p>
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="wealth.html">Wealth Management</a></li>
+                        <li><a href="insurance.html">Insurance Planning</a></li>
+                        <li><a href="wealth.html">Investment Advisory</a></li>
+                        <li><a href="contact.html">Financial Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@launchlayerfinance.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Financial Plaza, Suite 500<br>New York, NY 10001</p>
+                    </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2025 LaunchLayer Finance. All rights reserved.</p>
+                <p>© 2024 LaunchLayer Finance. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Simple form submission with success alert
+        document.getElementById('contact-form-element').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show success message
+            const successMessage = document.getElementById('success-message');
+            successMessage.style.display = 'block';
+            
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Reset form
+            this.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+        });
+
+        // Mobile menu toggle (if needed)
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
 </body>
 </html>
