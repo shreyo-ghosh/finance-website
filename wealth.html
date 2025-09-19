@@ -23,7 +23,6 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <!-- Hero Section -->
         <section class="hero">
@@ -33,19 +32,94 @@
                 <a href="#consultation" class="cta-button"><strong>Start Your Wealth Journey</strong></a>
             </div>
         </section>
-
-        <!-- Services Section -->
-        <section class="services">
+        
+        <!-- Wealth Solutions Cards Section -->
+        <section class="services section">
             <div class="container">
-                <h2>Wealth Building Services</h2>
-                <div class="services-grid">
-                    <!-- Service cards will be added here -->
+                <h2>Our Wealth Solutions</h2>
+                <div class="wealth-grid">
+                    <!-- Investment Plans Card -->
+                    <div class="wealth-card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Investment Plans</h3>
+                        <p class="card-description">Diversified investment portfolios designed to maximize returns while managing risk based on your financial goals.</p>
+                        <button class="cta-button">Book Consultation</button>
+                    </div>
+                    
+                    <!-- Retirement Planning Card -->
+                    <div class="wealth-card">
+                        <div class="card-icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h3>Retirement Planning</h3>
+                        <p class="card-description">Secure your future with comprehensive retirement strategies including 401(k) optimization and pension planning.</p>
+                        <button class="cta-button">Book Consultation</button>
+                    </div>
+                    
+                    <!-- Mutual Funds / SIPs Card -->
+                    <div class="wealth-card">
+                        <div class="card-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3>Mutual Funds / SIPs</h3>
+                        <p class="card-description">Systematic Investment Plans and carefully selected mutual funds for steady wealth accumulation over time.</p>
+                        <button class="cta-button">Book Consultation</button>
+                    </div>
+                    
+                    <!-- Tax Planning Card -->
+                    <div class="wealth-card">
+                        <div class="card-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3>Tax Planning</h3>
+                        <p class="card-description">Strategic tax optimization to minimize liabilities and maximize your after-tax returns through legal tax-saving instruments.</p>
+                        <button class="cta-button">Book Consultation</button>
+                    </div>
                 </div>
             </div>
         </section>
-
+        
+        <!-- Client Success Case Study Section -->
+        <section class="case-study section">
+            <div class="container">
+                <h2>Client Success Story</h2>
+                <div class="case-study-content">
+                    <div class="case-study-card">
+                        <div class="case-study-header">
+                            <h3>From Debt to Financial Freedom</h3>
+                            <span class="case-study-tag">Real Client Success</span>
+                        </div>
+                        <div class="case-study-details">
+                            <p><strong>Client:</strong> Sarah & Mike Johnson, Ages 35 & 37</p>
+                            <p><strong>Initial Situation:</strong> $45,000 in debt, no savings, living paycheck to paycheck</p>
+                            <p><strong>Our Strategy:</strong> Debt consolidation, automated savings plan, diversified SIP investments</p>
+                        </div>
+                        <div class="case-study-results">
+                            <div class="result-item">
+                                <span class="result-number">18 months</span>
+                                <span class="result-label">Debt-free</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-number">₹12L</span>
+                                <span class="result-label">Portfolio value</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-number">15%</span>
+                                <span class="result-label">Annual returns</span>
+                            </div>
+                        </div>
+                        <blockquote>
+                            "LaunchLayer Finance transformed our financial life. We went from struggling with debt to building a solid investment portfolio. Their personalized approach made all the difference."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Investment Strategies Section -->
-        <section class="strategies">
+        <section class="strategies section">
             <div class="container">
                 <h2>Investment Strategies</h2>
                 <div class="strategies-content">
@@ -53,9 +127,9 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Portfolio Management Section -->
-        <section class="portfolio">
+        <section class="portfolio section">
             <div class="container">
                 <h2>Portfolio Management</h2>
                 <div class="portfolio-content">
@@ -63,17 +137,16 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Consultation CTA Section -->
-        <section id="consultation" class="consultation-cta">
+        <section class="consultation-cta section" id="consultation">
             <div class="container">
                 <h2>Ready to Build Your Wealth?</h2>
                 <p>Schedule a consultation with our wealth management experts today.</p>
-                <a href="contact.html" class="cta-button"><strong>Schedule Consultation</strong></a>
+                <a href="contact.html" class="cta-button">Schedule Consultation</a>
             </div>
         </section>
     </main>
-
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -102,5 +175,118 @@
             </div>
         </div>
     </footer>
+    
+    <style>
+        /* Wealth Solutions Cards Styles */
+        .wealth-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .wealth-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .wealth-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card-icon {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 1rem;
+        }
+        
+        .card-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Case Study Styles */
+        .case-study {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+        
+        .case-study-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .case-study-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        
+        .case-study-tag {
+            background: #28a745;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .case-study-details {
+            margin-bottom: 2rem;
+        }
+        
+        .case-study-details p {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+        
+        .case-study-results {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .result-item {
+            text-align: center;
+        }
+        
+        .result-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+        
+        .result-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        blockquote {
+            font-style: italic;
+            color: #666;
+            border-left: 4px solid #007bff;
+            padding-left: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .section {
+            padding: 4rem 0;
+        }
+    </style>
 </body>
 </html>
